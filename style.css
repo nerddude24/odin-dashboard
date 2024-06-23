@@ -1,3 +1,27 @@
-body {
-	background-color: red !important;
+#container {
+	display: grid;
+
+	grid-template-columns: 1fr 6fr;
+	grid-template-rows: 150px 1fr;
+
+	height: 100%;
+
+	grid-template-areas: "sidebar header" "sidebar main";
+}
+
+#container #sidebar {
+	grid-area: sidebar;
+	background-color: blue;
+
+	display: flex;
+}
+
+#container #header {
+	background-color: white;
+	grid-area: header;
+}
+
+#container #main {
+	background-color: grey;
+	grid-area: main;
 }
