@@ -4,6 +4,7 @@
 	--blue: #38bdf8;
 	--golden: #facc15;
 	--black: #020617;
+	--grey: #e2e8f0;
 }
 
 #container {
@@ -18,17 +19,17 @@
 
 #container #sidebar {
 	grid-area: sidebar;
-	background-color: blue;
+	background-color: var(--blue);
 
 	display: flex;
 }
 
 #container #header {
-	background-color: white;
+	background-color: var(--white);
 	grid-area: header;
 }
 
 #container #main {
-	background-color: grey;
+	background-color: var(--grey);
 	grid-area: main;
 }
