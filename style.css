@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Rubik:wght@300..900&display=swap");
 :root {
 	--white: #ffffff;
 	--blue-white: #bae6fd;
@@ -6,6 +7,11 @@
 	--black: #2a2f42;
 	--dark-grey: #4f5159;
 	--grey: #e2e8f0;
+}
+
+body {
+	font-family: Rubik, Roboto, system-ui, "Segoe UI", Helvetica, Arial,
+		sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
 
 #container {
