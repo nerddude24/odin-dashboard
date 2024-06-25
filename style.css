@@ -3,7 +3,8 @@
 	--blue-white: #bae6fd;
 	--blue: #0b99db;
 	--golden: #facc15;
-	--black: #020617;
+	--black: #2a2f42;
+	--dark-grey: #4f5159;
 	--grey: #e2e8f0;
 }
 
@@ -46,12 +47,13 @@
 	background-color: var(--grey);
 	grid-area: main;
 
-	padding: 1rem 0.5rem;
+	padding: 1rem 0.75rem;
 
 	display: grid;
 	grid-template-columns: 3fr 1fr;
 	grid-template-rows: 1fr 1fr;
 	grid-template-areas: "projects announcements" "projects trending";
+	gap: 1rem;
 }
 
 .mid-icon {
@@ -180,4 +182,39 @@
 
 .trending {
 	grid-area: trending;
+}
+
+.project-card-section {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+	gap: 1.5rem;
+	padding-top: 0.5rem;
+}
+
+.project-card {
+	display: grid;
+	grid-template-rows: 1.2rem 1fr 1rem;
+	padding: 1.2rem 0.75rem;
+
+	height: 200px;
+
+	background-color: var(--white);
+	border-radius: 8px;
+	border-left: 10px solid var(--golden);
+	box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.15);
+}
+
+.project-card h4 {
+	font-size: 0.75rem;
+}
+
+.project-card p {
+	font-size: 0.6rem;
+	color: var(--dark-grey);
+}
+
+.project-card-buttons {
+	display: flex;
+	gap: 1rem;
+	justify-self: right;
 }
