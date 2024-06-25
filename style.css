@@ -1,7 +1,7 @@
 :root {
 	--white: #f0f9ff;
 	--blue-white: #bae6fd;
-	--blue: #38bdf8;
+	--blue: #0ea5e9;
 	--golden: #facc15;
 	--black: #020617;
 	--grey: #e2e8f0;
@@ -17,19 +17,28 @@
 	height: 100%;
 }
 
-#container #sidebar {
+#sidebar {
 	grid-area: sidebar;
 	background-color: var(--blue);
+	color: var(--white);
+
+	padding: 0.7rem;
 
 	display: flex;
+	flex-direction: column;
+	gap: 3rem;
+}
+#sidebar h1 {
+	font-size: 1.5rem;
+	font-weight: 700;
 }
 
-#container #header {
+#header {
 	background-color: var(--white);
 	grid-area: header;
 }
 
-#container #main {
+#main {
 	background-color: var(--grey);
 	grid-area: main;
 }
