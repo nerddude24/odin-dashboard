@@ -45,6 +45,13 @@
 #main {
 	background-color: var(--grey);
 	grid-area: main;
+
+	padding: 1rem 0.5rem;
+
+	display: grid;
+	grid-template-columns: 3fr 1fr;
+	grid-template-rows: 1fr 1fr;
+	grid-template-areas: "projects announcements" "projects trending";
 }
 
 .mid-icon {
@@ -156,4 +163,21 @@
 .profile-handle {
 	font-size: 0.65rem;
 	font-weight: 600;
+}
+
+#main h3 {
+	font-size: 0.8rem;
+	font-weight: 600;
+}
+
+.projects {
+	grid-area: projects;
+}
+
+.announcements {
+	grid-area: announcements;
+}
+
+.trending {
+	grid-area: trending;
 }
