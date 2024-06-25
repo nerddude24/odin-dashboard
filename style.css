@@ -1,5 +1,5 @@
 :root {
-	--white: #f0f9ff;
+	--white: #ffffff;
 	--blue-white: #bae6fd;
 	--blue: #0b99db;
 	--golden: #facc15;
@@ -10,8 +10,8 @@
 #container {
 	display: grid;
 
-	grid-template-columns: min(250px, 25vw) 5fr;
-	grid-template-rows: 150px 1fr;
+	grid-template-columns: min(220px, 25vw) 5fr;
+	grid-template-rows: min(100px, 15vh) 1fr;
 	grid-template-areas: "sidebar header" "sidebar main";
 
 	min-height: 100vh;
@@ -33,6 +33,10 @@
 #header {
 	background-color: var(--white);
 	grid-area: header;
+
+	display: grid;
+	grid-template-rows: 1fr 2fr;
+	padding: 0.2rem 2rem;
 }
 
 #main {
@@ -73,12 +77,35 @@
 	display: flex;
 	align-items: center;
 	gap: 0.5rem;
-
-	cursor: pointer;
 }
 
 .sidebar-btn {
 	font-size: 0.8rem;
 	font-weight: 600;
 	gap: 1rem;
+}
+
+.clickable {
+	cursor: pointer;
+}
+
+#header > .top,
+#header > .actions {
+	display: flex;
+	gap: 1rem;
+	align-items: center;
+}
+
+#header > .top > h2 {
+	font-size: 1rem;
+}
+
+#search {
+	flex: 1;
+	margin-right: 3rem;
+	height: 1.2rem;
+	border: none;
+
+	background-color: var(--grey);
+	border-radius: 32px;
 }
