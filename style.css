@@ -11,7 +11,7 @@
 	display: grid;
 
 	grid-template-columns: min(220px, 25vw) 5fr;
-	grid-template-rows: min(100px, 15vh) 1fr;
+	grid-template-rows: min(150px, 20vh) 1fr;
 	grid-template-areas: "sidebar header" "sidebar main";
 
 	min-height: 100vh;
@@ -108,4 +108,41 @@
 
 	background-color: var(--grey);
 	border-radius: 32px;
+}
+
+.header-greet {
+	display: flex;
+	flex-direction: column;
+	flex: 1;
+}
+
+.header-greet h1 {
+	font-size: 0.85rem;
+}
+
+.header-greet p {
+	font-size: 0.6rem;
+	font-weight: 600;
+}
+
+.header-btn {
+	border: none;
+	border-radius: 16px;
+	background-color: var(--blue);
+	color: white;
+	padding: 0.25rem 1.25rem;
+	font-size: 0.7rem;
+	font-weight: 600;
+}
+
+.small-profile-pic {
+	border-radius: 50%;
+	width: 1.5rem;
+	height: 1.5rem;
+}
+
+.big-profile-pic {
+	border-radius: 50%;
+	width: 3rem;
+	height: 3rem;
 }
