@@ -10,16 +10,16 @@
 	<body>
 		<div id="container">
 			<div id="sidebar">
-				<div class="sidebar-title">
+				<div class="sidebar-title clickable">
 					<img src="assets/dashboard.svg" alt="" class="mid-icon inverse-clr" />
 					<h1>Dashboard</h1>
 				</div>
 				<div class="sidebar-btns">
-					<div class="sidebar-btn">
+					<div class="sidebar-btn clickable">
 						<img src="assets/home.svg" alt="" class="small-icon inverse-clr" />
 						Home
 					</div>
-					<div class="sidebar-btn">
+					<div class="sidebar-btn clickable">
 						<img
 							src="assets/profile.svg"
 							alt=""
@@ -27,7 +27,7 @@
 						/>
 						Profile
 					</div>
-					<div class="sidebar-btn">
+					<div class="sidebar-btn clickable">
 						<img
 							src="assets/message.svg"
 							alt=""
@@ -35,18 +35,18 @@
 						/>
 						Messages
 					</div>
-					<div class="sidebar-btn">
+					<div class="sidebar-btn clickable">
 						<img src="assets/clock.svg" alt="" class="small-icon inverse-clr" />
 						History
 					</div>
-					<div class="sidebar-btn">
+					<div class="sidebar-btn clickable">
 						<img
 							src="assets/note-multiple.svg"
 							alt=""
 							class="small-icon inverse-clr"
 						/>Tasks
 					</div>
-					<div class="sidebar-btn">
+					<div class="sidebar-btn clickable">
 						<img
 							src="assets/account-group.svg"
 							alt=""
@@ -55,14 +55,14 @@
 					</div>
 				</div>
 				<div class="sidebar-btns">
-					<div class="sidebar-btn">
+					<div class="sidebar-btn clickable">
 						<img
 							src="assets/cog.svg"
 							alt=""
 							class="small-icon inverse-clr"
 						/>Settings
 					</div>
-					<div class="sidebar-btn">
+					<div class="sidebar-btn clickable">
 						<img
 							src="assets/help.svg"
 							alt=""
@@ -79,8 +79,31 @@
 				</div>
 			</div>
 			<div id="header">
-				<div class="top">SEARCH</div>
-				<div class="actions">UPLOAD</div>
+				<div class="top">
+					<img src="assets/search.svg" alt="" class="small-icon clickable" />
+					<input type="text" name="search" id="search" />
+					<img src="assets/bell-ring.svg" alt="" class="small-icon clickable" />
+					<img
+						src="assets/profile-pic1"
+						alt="O"
+						class="small-profile-pic clickable"
+					/>
+					<h2>nerddude</h2>
+				</div>
+				<div class="actions">
+					<img
+						src="assets/profile-pic1"
+						alt="O"
+						class="big-profile-pic clickable"
+					/>
+					<div class="header-greet">
+						<p>Hi there,</p>
+						<h1><b>nerddude</b> (@nerddude)</h1>
+					</div>
+					<button class="header-btn">New</button>
+					<button class="header-btn">Upload</button>
+					<button class="header-btn">Share</button>
+				</div>
 			</div>
 			<div id="main">
 				<div class="projects">stuff</div>
